@@ -1,11 +1,10 @@
-Jenkinsfile (Declarative Pipeline)
+//Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker 'maven:3.3.3' }
+    agent { docker 'node:6.3' }
     stages {
         stage('build') {
             steps {
-                sh 'echo hello'
-               
+                sh 'npm --version'
             }
         }
     }
