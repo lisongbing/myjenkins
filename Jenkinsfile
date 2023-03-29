@@ -1,10 +1,10 @@
 //Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker { image 'node:latest' }  }
+    
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'go1.18 version'
             }
         }
     }
